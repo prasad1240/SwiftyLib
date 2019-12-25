@@ -14,6 +14,8 @@
 		226AE2D823B3BF450015DFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226AE2D623B3BF450015DFC5 /* Main.storyboard */; };
 		226AE2DA23B3BF460015DFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226AE2D923B3BF460015DFC5 /* Assets.xcassets */; };
 		226AE2DD23B3BF460015DFC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226AE2DB23B3BF460015DFC5 /* LaunchScreen.storyboard */; };
+		226AE2E323B3C1820015DFC5 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AE2E223B3C1820015DFC5 /* SwiftyLib.swift */; };
+		226AE2E523B3C46E0015DFC5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AE2E423B3C46E0015DFC5 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		226AE2D923B3BF460015DFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		226AE2DC23B3BF460015DFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226AE2DE23B3BF460015DFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226AE2E223B3C1820015DFC5 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
+		226AE2E423B3C46E0015DFC5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = SwiftyLibExamples/Classes/TestViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				226AE28A23B3BAD00015DFC5 /* SwiftLib.h */,
+				226AE2E223B3C1820015DFC5 /* SwiftyLib.swift */,
+				226AE2E423B3C46E0015DFC5 /* TestViewController.swift */,
 				226AE28B23B3BAD00015DFC5 /* Info.plist */,
 			);
 			path = SwiftLib;
@@ -150,6 +156,7 @@
 				TargetAttributes = {
 					226AE28623B3BAD00015DFC5 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					226AE2CD23B3BF450015DFC5 = {
 						CreatedOnToolsVersion = 11.0;
@@ -200,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226AE2E523B3C46E0015DFC5 /* TestViewController.swift in Sources */,
+				226AE2E323B3C1820015DFC5 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +367,7 @@
 		226AE29023B3BAD00015DFC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KNT489GQP6;
@@ -374,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiberlink..SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +393,7 @@
 		226AE29123B3BAD00015DFC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KNT489GQP6;
